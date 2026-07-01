@@ -1,0 +1,851 @@
+{
+    "levelId": "discover_prototype_01",
+    "levelTitle": "Pathway 1 Ambucycle",
+    "avatarImage": "images/avatars/dr_ros.png",
+    "scoreCategories": [
+        "opportunity_recognition",
+        "innovative_problem_solving",
+        "taking_action",
+        "working_with_others",
+        "resilience"
+    ],
+    "panels": [
+        {
+            "id": "intro",
+            "backgroundImage": "images/scenes/intro.png"
+        },
+        {
+            "id": "story_01",
+            "backgroundImage": "images/scenes/story_01.png",
+            "dialogue": {
+                "speech": "In a small village outside Kigali, Rwanda, two doctors are visiting a community.",
+                "instruction": "Click next to continue"
+            }
+        },
+        {
+            "variants": [
+                {
+                    "id": "action_01a",
+                    "backgroundImage": "images/scenes/action_01A.png",
+                    "dialogue": {
+                        "speech": "What problem do you think Dr Helen and Dr Loza noticed?",
+                        "instruction": "Select the correct answer and click Submit.",
+                        "question": {
+                            "category": "opportunity_recognition",
+                            "options": [
+                                "Sick people need a faster way to get medical help.",
+                                "Sick people need a way to stay calm while they wait.",
+                                "Communities need to know where the nearest hospitals are.",
+                                "Families need to care more when people get sick."
+                            ],
+                            "shuffle": true,
+                            "correctAnswer": [
+                                0
+                            ],
+                            "clue": "Think about what Dr Loza said about the ambulance van. You can click “Back” to read it again.",
+                            "scoring": {
+                                "firstTry": {
+                                    "points": 100,
+                                    "coin": true,
+                                    "coinImage": "images/awards/coin_ideas.png",
+                                    "awardImage": "images/awards/100_points.png"
+                                },
+                                "secondTryNoClue": {
+                                    "points": 75,
+                                    "coin": false,
+                                    "awardImage": "images/awards/75_points.png"
+                                },
+                                "secondTryWithClue": {
+                                    "points": 50,
+                                    "coin": false,
+                                    "awardImage": "images/awards/50_points.png"
+                                }
+                            },
+                            "feedback": {
+                                "correct": {
+                                    "speech": "Correct! That is exactly what Dr Helen and Dr Loza noticed.",
+                                    "instruction": "Click Next to continue with the story.",
+                                    "detail": [
+                                        "They saw that the community had no way to get emergency help fast enough, and realised this was a real problem they could solve.",
+                                        "We call this skill “Opportunity recognition.”"
+                                    ]
+                                },
+                                "incorrectFirstTry": {
+                                    "speech": "Incorrect. Remember, they needed help //quickly//.",
+                                    "instruction": "Would you like to try again?",
+                                    "retryOptions": [
+                                        {
+                                            "action": "retry_no_clue",
+                                            "label": "Yes, let me try one more time on my own."
+                                        },
+                                        {
+                                            "action": "retry_with_clue",
+                                            "label": "Yes, but please give me a clue."
+                                        },
+                                        {
+                                            "action": "no_retry",
+                                            "label": "No, I want to move on."
+                                        }
+                                    ]
+                                },
+                                "incorrectFinalTry": {
+                                    "speech": "Incorrect. Dr Helen and Dr Loza noticed that the two girls could not get help fast enough during a serious emergency.",
+                                    "instruction": "Click Next to continue with the story.",
+                                    "detail": [
+                                        "The ambulance van would not get to them in time through the traffic. They saw that slow access to emergency care was a major problem they could solve.",
+                                        "We call this skill “Opportunity recognition.”"
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    "id": "action_01b",
+                    "backgroundImage": "images/scenes/action_01B.png",
+                    "dialogue": {
+                        "speech": "What problem with the current system should they try to solve?",
+                        "instruction": "Select the correct answer and click Submit.",
+                        "question": {
+                            "category": "opportunity_recognition",
+                            "options": [
+                                "Large ambulance vans are big and get stuck in traffic.",
+                                "The ambulance vans need louder sirens to warn other cars.",
+                                "The hospitals are asking for more doctors to drive the vans.",
+                                "People cannot find ambulances."
+                            ],
+                            "shuffle": true,
+                            "correctAnswer": [
+                                0
+                            ],
+                            "clue": "Read what Dr Loza said about the bad traffic. You can click “Back” to read it again.",
+                            "scoring": {
+                                "firstTry": {
+                                    "points": 100,
+                                    "coin": true,
+                                    "coinImage": "images/awards/coin_ideas.png",
+                                    "awardImage": "images/awards/100_points.png"
+                                },
+                                "secondTryNoClue": {
+                                    "points": 75,
+                                    "coin": false,
+                                    "awardImage": "images/awards/75_points.png"
+                                },
+                                "secondTryWithClue": {
+                                    "points": 50,
+                                    "coin": false,
+                                    "awardImage": "images/awards/50_points.png"
+                                }
+                            },
+                            "feedback": {
+                                "correct": {
+                                    "speech": "Correct! That is exactly what Dr Helen and Dr Loza realised.",
+                                    "instruction": "Click Next to continue with the story.",
+                                    "detail": [
+                                        "They saw that large ambulance vans were too slow and got stuck in traffic, creating a perfect opportunity to find a better way.",
+                                        "We call this skill “Opportunity recognition.”"
+                                    ]
+                                },
+                                "incorrectFirstTry": {
+                                    "speech": "Incorrect. Focus on why the large ambulance could not reach the girls quickly. What was blocking it?",
+                                    "instruction": "Would you like to try again?",
+                                    "retryOptions": [
+                                        {
+                                            "action": "retry_no_clue",
+                                            "label": "Yes, let me try one more time on my own."
+                                        },
+                                        {
+                                            "action": "retry_with_clue",
+                                            "label": "Yes, but please give me a clue."
+                                        },
+                                        {
+                                            "action": "no_retry",
+                                            "label": "No, I want to move on."
+                                        }
+                                    ]
+                                },
+                                "incorrectFinalTry": {
+                                    "speech": "Incorrect. Dr Helen and Dr Loza realised that large ambulance vans were too slow and often got stuck in traffic.",
+                                    "instruction": "Click Next to continue with the story.",
+                                    "detail": [
+                                        "This showed them there was an opportunity to create a faster transport system.",
+                                        "We call this skill “Opportunity recognition.”"
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "variants": [
+                {
+                    "id": "action_02a",
+                    "backgroundImage": "images/scenes/action_02A.png",
+                    "dialogue": {
+                        "speech": "How could Dr Helen and Dr Loza show initiative?",
+                        "instruction": "Select the correct answer and click Submit.",
+                        "question": {
+                            "category": "taking_action",
+                            "options": [
+                                "Take the lead and start designing a new medical service themselves.",
+                                "Write a letter to the government and wait for them to fix it.",
+                                "Wait a few years to see if the traffic gets better on its own.",
+                                "Tell the sick patients to walk to the hospital instead."
+                            ],
+                            "shuffle": true,
+                            "correctAnswer": [
+                                0
+                            ],
+                            "clue": "Should they rely on someone else, or take charge?",
+                            "scoring": {
+                                "firstTry": {
+                                    "points": 100,
+                                    "coin": true,
+                                    "coinImage": "images/awards/coin_action.png",
+                                    "awardImage": "images/awards/100_points.png"
+                                },
+                                "secondTryNoClue": {
+                                    "points": 75,
+                                    "coin": false,
+                                    "awardImage": "images/awards/75_points.png"
+                                },
+                                "secondTryWithClue": {
+                                    "points": 50,
+                                    "coin": false,
+                                    "awardImage": "images/awards/50_points.png"
+                                }
+                            },
+                            "feedback": {
+                                "correct": {
+                                    "speech": "Correct! That is exactly what Dr Helen and Dr Loza did.",
+                                    "instruction": "Click Next to continue with the story.",
+                                    "detail": [
+                                        "They did not wait for the government or anyone else to help. They took the first step to create a new service themselves.",
+                                        "We call this skill “Taking Action & Initiative”."
+                                    ]
+                                },
+                                "incorrectFirstTry": {
+                                    "speech": "Incorrect. Think about whether an entrepreneur should wait for help or act immediately. Dr Helen and Dr Loza wanted to fix the problem themselves.",
+                                    "instruction": "Would you like to try again?",
+                                    "retryOptions": [
+                                        {
+                                            "action": "retry_no_clue",
+                                            "label": "Yes, let me try one more time on my own."
+                                        },
+                                        {
+                                            "action": "retry_with_clue",
+                                            "label": "Yes, but please give me a clue."
+                                        },
+                                        {
+                                            "action": "no_retry",
+                                            "label": "No, I want to move on."
+                                        }
+                                    ]
+                                },
+                                "incorrectFinalTry": {
+                                    "speech": "Incorrect. Taking action means you do not wait for someone else to act.",
+                                    "instruction": "Click Next to continue with the story.",
+                                    "detail": [
+                                        "Dr Helen and Dr Loza took the first step to design their own new service to fix the problem themselves.",
+                                        "We call this skill “Taking Action & Initiative”."
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    "id": "action_02b",
+                    "backgroundImage": "images/scenes/action_02B.png",
+                    "dialogue": {
+                        "speech": "What step should they take next?",
+                        "instruction": "Select the correct answer and click Submit.",
+                        "question": {
+                            "category": "taking_action",
+                            "options": [
+                                "Go out and speak directly to hospitals and health workers.",
+                                "Search for videos about how hospitals work in America.",
+                                "Guess what the patients need to save time.",
+                                "Wait for the government to send them a report about the health system."
+                            ],
+                            "shuffle": true,
+                            "correctAnswer": [
+                                0
+                            ],
+                            "clue": "Who knows the most about the emergency healthcare system in Rwanda?",
+                            "scoring": {
+                                "firstTry": {
+                                    "points": 100,
+                                    "coin": true,
+                                    "coinImage": "images/awards/coin_ideas.png",
+                                    "awardImage": "images/awards/100_points.png"
+                                },
+                                "secondTryNoClue": {
+                                    "points": 75,
+                                    "coin": false,
+                                    "awardImage": "images/awards/75_points.png"
+                                },
+                                "secondTryWithClue": {
+                                    "points": 50,
+                                    "coin": false,
+                                    "awardImage": "images/awards/50_points.png"
+                                }
+                            },
+                            "feedback": {
+                                "correct": {
+                                    "speech": "Correct! That is exactly what Dr Helen and Dr Loza did.",
+                                    "instruction": "Click Next to continue with the story.",
+                                    "detail": [
+                                        "They proactively went out to speak to hospitals and health workers to understand how emergency care works in Rwanda before starting.",
+                                        "We call this skill “Taking Action & Initiative”."
+                                    ]
+                                },
+                                "incorrectFirstTry": {
+                                    "speech": "Incorrect. They needed to understand the local healthcare system in Rwanda, so they had to go speak to people who actually work there.",
+                                    "instruction": "Would you like to try again?",
+                                    "retryOptions": [
+                                        {
+                                            "action": "retry_no_clue",
+                                            "label": "Yes, let me try one more time on my own."
+                                        },
+                                        {
+                                            "action": "retry_with_clue",
+                                            "label": "Yes, but please give me a clue."
+                                        },
+                                        {
+                                            "action": "no_retry",
+                                            "label": "No, I want to move on."
+                                        }
+                                    ]
+                                },
+                                "incorrectFinalTry": {
+                                    "speech": "Incorrect. Taking initiative means gathering the facts yourself.",
+                                    "instruction": "Click Next to continue with the story.",
+                                    "detail": [
+                                        "They proactively went out to speak to local hospitals and health workers to understand how emergency care works in Rwanda."
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "variants": [
+                {
+                    "id": "action_03a",
+                    "backgroundImage": "images/scenes/action_03A.png",
+                    "dialogue": {
+                        "speech": "What creative vehicle choice will solve their problem?",
+                        "instruction": "Select the correct answer and click Submit.",
+                        "question": {
+                            "category": "innovative_problem_solving",
+                            "options": [
+                                "Use motorcycles so health workers can move through traffic faster.",
+                                "Use smaller vans painted in bright colours so cars move out the way.",
+                                "Use bicycles because they do not need petrol.",
+                                "Use helicopters to fly over the traffic jams."
+                            ],
+                            "shuffle": true,
+                            "correctAnswer": [
+                                0
+                            ],
+                            "clue": "Look closely at the name they chose: “Ambu-cycle”.",
+                            "scoring": {
+                                "firstTry": {
+                                    "points": 100,
+                                    "coin": true,
+                                    "coinImage": "images/awards/coin_ideas.png",
+                                    "awardImage": "images/awards/100_points.png"
+                                },
+                                "secondTryNoClue": {
+                                    "points": 75,
+                                    "coin": false,
+                                    "awardImage": "images/awards/75_points.png"
+                                },
+                                "secondTryWithClue": {
+                                    "points": 50,
+                                    "coin": false,
+                                    "awardImage": "images/awards/50_points.png"
+                                }
+                            },
+                            "feedback": {
+                                "correct": {
+                                    "speech": "Correct! That is exactly what Dr Helen and Dr Loza decided to do.",
+                                    "instruction": "Click Next to continue with the story.",
+                                    "detail": [
+                                        "They realised motorcycles could act like small ambulances to get through traffic faster and reach patients quickly."
+                                    ]
+                                },
+                                "incorrectFirstTry": {
+                                    "speech": "Incorrect. Think about a vehicle with an engine that is small enough to weave through cars easily.",
+                                    "instruction": "Would you like to try again?",
+                                    "retryOptions": [
+                                        {
+                                            "action": "retry_no_clue",
+                                            "label": "Yes, let me try one more time on my own."
+                                        },
+                                        {
+                                            "action": "retry_with_clue",
+                                            "label": "Yes, but please give me a clue."
+                                        },
+                                        {
+                                            "action": "no_retry",
+                                            "label": "No, I want to move on."
+                                        }
+                                    ]
+                                },
+                                "incorrectFinalTry": {
+                                    "speech": "Incorrect. Ambulances get stuck in traffic, but motorcycles can get through cars easily.",
+                                    "instruction": "Click Next to continue with the story.",
+                                    "detail": [
+                                        "Dr Helen and Dr Loza innovated by using motorcycles as small, fast ambulances.",
+                                        "Helicopters would be a very expensive solution to this problem, and bicycles might be too slow and make health workers tired."
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    "id": "action_03b",
+                    "backgroundImage": "images/scenes/action_03B.png",
+                    "dialogue": {
+                        "speech": "What technology should they build to solve this problem?",
+                        "instruction": "Select the correct answer and click Submit.",
+                        "question": {
+                            "category": "innovative_problem_solving",
+                            "options": [
+                                "An app that connects sick people with the closest medical help.",
+                                "A radio station that broadcasts health tips all day.",
+                                "A map book they can print and hand out at clinics.",
+                                "A loud alarm system placed in every village."
+                            ],
+                            "shuffle": true,
+                            "correctAnswer": [
+                                0
+                            ],
+                            "clue": "What modern tool do people use on their smartphones to find a service?",
+                            "scoring": {
+                                "firstTry": {
+                                    "points": 100,
+                                    "coin": true,
+                                    "coinImage": "images/awards/coin_ideas.png",
+                                    "awardImage": "images/awards/100_points.png"
+                                },
+                                "secondTryNoClue": {
+                                    "points": 75,
+                                    "coin": false,
+                                    "awardImage": "images/awards/75_points.png"
+                                },
+                                "secondTryWithClue": {
+                                    "points": 50,
+                                    "coin": false,
+                                    "awardImage": "images/awards/50_points.png"
+                                }
+                            },
+                            "feedback": {
+                                "correct": {
+                                    "speech": "Correct! That is exactly what Dr Helen and Dr Loza did.",
+                                    "instruction": "Click Next to continue with the story.",
+                                    "detail": [
+                                        "They decided to create a mobile app to connect sick or injured people instantly with any nearby medical help or an Ambucycle rider."
+                                    ]
+                                },
+                                "incorrectFirstTry": {
+                                    "speech": "Incorrect. They needed a fast way to connect people using modern technology.",
+                                    "instruction": "Would you like to try again?",
+                                    "retryOptions": [
+                                        {
+                                            "action": "retry_no_clue",
+                                            "label": "Yes, let me try one more time on my own."
+                                        },
+                                        {
+                                            "action": "retry_with_clue",
+                                            "label": "Yes, but please give me a clue."
+                                        },
+                                        {
+                                            "action": "no_retry",
+                                            "label": "No, I want to move on."
+                                        }
+                                    ]
+                                },
+                                "incorrectFinalTry": {
+                                    "speech": "Incorrect. To give people instant access to their motorcycle medical service, they decided to build a mobile app.",
+                                    "instruction": "Click Next to continue with the story.",
+                                    "detail": [
+                                        "This creative solution connects sick or injured people directly with nearby medical help or Ambucycle riders using modern technology."
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "id": "story_02",
+            "backgroundImage": "images/scenes/story_02.png",
+            "dialogue": {
+                "speech": "Together, the doctors decided to start Ambucycle, a service that sends trained health workers on motorcycles to reach people faster.",
+                "detail": [
+                    "These motorcycles would carry medical kits so they can help people right away.",
+                    "They also decided to develop an app to help people get medical help faster."
+                ],
+                "instruction": "Click next to continue"
+            }
+        },
+        {
+            "variants": [
+                {
+                    "id": "action_04a",
+                    "backgroundImage": "images/scenes/action_04A.png",
+                    "dialogue": {
+                        "speech": "Why should they collaborate with the police?",
+                        "instruction": "Select the correct answer and click Submit.",
+                        "question": {
+                            "category": "working_with_others",
+                            "options": [
+                                "To learn more about the traffic patterns in Rwanda.",
+                                "To make the police officers drive the motorcycles for them.",
+                                "To learn more about hospitals in Rwanda.",
+                                "To ask the police to start Ambucycle for them."
+                            ],
+                            "shuffle": true,
+                            "correctAnswer": [
+                                0
+                            ],
+                            "clue": "How did the police share their knowledge?",
+                            "scoring": {
+                                "firstTry": {
+                                    "points": 100,
+                                    "coin": true,
+                                    "coinImage": "images/awards/coin_ideas.png",
+                                    "awardImage": "images/awards/100_points.png"
+                                },
+                                "secondTryNoClue": {
+                                    "points": 75,
+                                    "coin": false,
+                                    "awardImage": "images/awards/75_points.png"
+                                },
+                                "secondTryWithClue": {
+                                    "points": 50,
+                                    "coin": false,
+                                    "awardImage": "images/awards/50_points.png"
+                                }
+                            },
+                            "feedback": {
+                                "correct": {
+                                    "speech": "Correct! That is exactly what Dr Helen and Dr Loza did.",
+                                    "instruction": "Click Next to continue with the story.",
+                                    "detail": [
+                                        "They used the special knowledge of the traffic police to make sure their service was safe and effective.",
+                                        "We call this skill “Working with others”."
+                                    ]
+                                },
+                                "incorrectFirstTry": {
+                                    "speech": "Incorrect. Think about the valuable information they gained from these experts to make their idea better.",
+                                    "instruction": "Would you like to try again?",
+                                    "retryOptions": [
+                                        {
+                                            "action": "retry_no_clue",
+                                            "label": "Yes, let me try one more time on my own."
+                                        },
+                                        {
+                                            "action": "retry_with_clue",
+                                            "label": "Yes, but please give me a clue."
+                                        },
+                                        {
+                                            "action": "no_retry",
+                                            "label": "No, I want to move on."
+                                        }
+                                    ]
+                                },
+                                "incorrectFinalTry": {
+                                    "speech": "Incorrect. Working with others means combining different skills.",
+                                    "instruction": "Click Next to continue with the story.",
+                                    "detail": [
+                                        "They spoke to traffic police to learn from their expertise, making Ambucycle safer and more effective."
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    "id": "action_04b",
+                    "backgroundImage": "images/scenes/action_04B.png",
+                    "dialogue": {
+                        "speech": "Why should they collaborate with emergency healthcare workers?",
+                        "instruction": "Select the correct answer and click Submit.",
+                        "question": {
+                            "category": "working_with_others",
+                            "options": [
+                                "To learn more about emergency healthcare in Rwanda.",
+                                "To ask if they would pay for all the medical supplies.",
+                                "To learn more about traffic in Rwanda.",
+                                "To ask the hospitals to start their own motorcycle service."
+                            ],
+                            "shuffle": true,
+                            "correctAnswer": [
+                                0
+                            ],
+                            "clue": "What can Dr Helen and Dr Loza learn from other healthcare workers?",
+                            "scoring": {
+                                "firstTry": {
+                                    "points": 100,
+                                    "coin": true,
+                                    "coinImage": "images/awards/coin_ideas.png",
+                                    "awardImage": "images/awards/100_points.png"
+                                },
+                                "secondTryNoClue": {
+                                    "points": 75,
+                                    "coin": false,
+                                    "awardImage": "images/awards/75_points.png"
+                                },
+                                "secondTryWithClue": {
+                                    "points": 50,
+                                    "coin": false,
+                                    "awardImage": "images/awards/50_points.png"
+                                }
+                            },
+                            "feedback": {
+                                "correct": {
+                                    "speech": "Correct! That is exactly what Dr Helen and Dr Loza did.",
+                                    "instruction": "Click Next to continue with the story.",
+                                    "detail": [
+                                        "They used the special knowledge of emergency healthcare workers to make sure their service had the right skills and equipment.",
+                                        "We call this skill “Working with others”."
+                                    ]
+                                },
+                                "incorrectFirstTry": {
+                                    "speech": "Incorrect. Emergency medical care requires special training and equipment.",
+                                    "instruction": "Would you like to try again?",
+                                    "retryOptions": [
+                                        {
+                                            "action": "retry_no_clue",
+                                            "label": "Yes, let me try one more time on my own."
+                                        },
+                                        {
+                                            "action": "retry_with_clue",
+                                            "label": "Yes, but please give me a clue."
+                                        },
+                                        {
+                                            "action": "no_retry",
+                                            "label": "No, I want to move on."
+                                        }
+                                    ]
+                                },
+                                "incorrectFinalTry": {
+                                    "speech": "Incorrect. To help more people, Dr Helen and Dr Loza used the special knowledge of other healthcare workers to make sure their service had the right skills and equipment.",
+                                    "instruction": "Click Next to continue with the story.",
+                                    "detail": [
+                                        "We call this skill “Working with others”."
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "id": "story_03",
+            "backgroundImage": "images/scenes/story_03.png",
+            "dialogue": {
+                "speech": "Dr Helen and Dr Loza did not have lots of money or equipment.",
+                "detail": [
+                    "They used what they had: knowledge, internet access, and relationships with other medical workers.",
+                    "They researched online and spoke to hospitals, health workers, and traffic police.",
+                    "The time has come to share their ideas with the government."
+                ],
+                "instruction": "Click next to continue"
+            }
+        },
+        {
+            "id": "story_04",
+            "backgroundImage": "images/scenes/story_04.png",
+            "dialogue": {
+                "speech": "Getting support from the Ministry of Health made it easier for Dr Helen and Dr Loza to test their ideas and help more people.",
+                "detail": [
+                    "They mobilised the government to get valuable support and guidance.",
+                    "Mobilising others means inspiring, motivating, and leading people to support and participate in entrepreneurial activities and achieve common goals."
+                ],
+                "instruction": "Click next to continue"
+            }
+        },
+        {
+            "variants": [
+                {
+                    "id": "action_05a",
+                    "backgroundImage": "images/scenes/action_05A.png",
+                    "dialogue": {
+                        "speech": "Ambucycle grew fast. Many people needed their help. But it was not always easy. How could Dr Helen and Dr Loza show resilience?",
+                        "instruction": "Select the ALL the correct answers and click Submit.",
+                        "question": {
+                            "category": "resilience",
+                            "options": [
+                                "Be honest with the team about the money problems.",
+                                "Ask if the team would be willing to keep working to build a better future.",
+                                "Close Ambucycle down until they can find a rich investor.",
+                                "Ignore the money problems and pretend everything was fine."
+                            ],
+                            "shuffle": true,
+                            "correctAnswer": [
+                                0,
+                                1
+                            ],
+                            "clue": "What should you do when you face a setback but believe in your goal?",
+                            "scoring": {
+                                "firstTry": {
+                                    "points": 100,
+                                    "coin": true,
+                                    "coinImage": "images/awards/coin_action.png",
+                                    "awardImage": "images/awards/100_points.png"
+                                },
+                                "secondTryNoClue": {
+                                    "points": 75,
+                                    "coin": false,
+                                    "awardImage": "images/awards/75_points.png"
+                                },
+                                "secondTryWithClue": {
+                                    "points": 50,
+                                    "coin": false,
+                                    "awardImage": "images/awards/50_points.png"
+                                }
+                            },
+                            "feedback": {
+                                "correct": {
+                                    "speech": "Correct! That is exactly what Dr Helen and Dr Loza did.",
+                                    "instruction": "Click Next to continue with the story.",
+                                    "detail": [
+                                        "Even when money was very limited, they did not hide the problem.",
+                                        "They were honest with their team and asked them to keep working towards their goals."
+                                    ]
+                                },
+                                "incorrectFirstTry": {
+                                    "speech": "Incorrect. Giving up or pretending everything is fine is not showing resilience. Think about how they could face the problem instead.",
+                                    "instruction": "Would you like to try again?",
+                                    "retryOptions": [
+                                        {
+                                            "action": "retry_no_clue",
+                                            "label": "Yes, let me try one more time on my own."
+                                        },
+                                        {
+                                            "action": "retry_with_clue",
+                                            "label": "Yes, but please give me a clue."
+                                        },
+                                        {
+                                            "action": "no_retry",
+                                            "label": "No, I want to move on."
+                                        }
+                                    ]
+                                },
+                                "incorrectFinalTry": {
+                                    "speech": "Incorrect. Resilience means facing challenges head-on.",
+                                    "instruction": "Click Next to continue with the story.",
+                                    "detail": [
+                                        "Dr Helen and Dr Loza did not hide the problem; they were honest with their team.",
+                                        "They all kept working towards their goals together even when things were tough."
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    "id": "action_05b",
+                    "backgroundImage": "images/scenes/action_05B.png",
+                    "dialogue": {
+                        "speech": "Ambucycle grew fast. Many people needed their help. But it was not always easy. How can Dr Loza adapt to this situation and get her team to stay?",
+                        "instruction": "Select the ALL the correct answers and click Submit.",
+                        "question": {
+                            "category": "resilience",
+                            "options": [
+                                "Share their long-term goals and plans to get there.",
+                                "Remind them they are saving lives in their community.",
+                                "Keep the money problems a secret and hope they do not notice.",
+                                "Tell the workers they will be fired if they do not accept a pay cut."
+                            ],
+                            "shuffle": true,
+                            "correctAnswer": [
+                                0,
+                                1
+                            ],
+                            "clue": "Why did the workers decide to stay even without a lot of pay?",
+                            "scoring": {
+                                "firstTry": {
+                                    "points": 100,
+                                    "coin": true,
+                                    "coinImage": "images/awards/coin_action.png",
+                                    "awardImage": "images/awards/100_points.png"
+                                },
+                                "secondTryNoClue": {
+                                    "points": 75,
+                                    "coin": false,
+                                    "awardImage": "images/awards/75_points.png"
+                                },
+                                "secondTryWithClue": {
+                                    "points": 50,
+                                    "coin": false,
+                                    "awardImage": "images/awards/50_points.png"
+                                }
+                            },
+                            "feedback": {
+                                "correct": {
+                                    "speech": "Correct! That is exactly what Dr Helen and Dr Loza did.",
+                                    "instruction": "Click Next to continue with the story.",
+                                    "detail": [
+                                        "They adapted to their situation and persevered.",
+                                        "They sat down with their team and explained the money situation honestly.",
+                                        "They reminded them all of the impact they are making in their community and reassured them of the long-term plan and goals."
+                                    ]
+                                },
+                                "incorrectFirstTry": {
+                                    "speech": "Incorrect. An entrepreneur should be honest and use their mission to inspire people, not keep secrets or threaten their workers’ livelihoods.",
+                                    "instruction": "Would you like to try again?",
+                                    "retryOptions": [
+                                        {
+                                            "action": "retry_no_clue",
+                                            "label": "Yes, let me try one more time on my own."
+                                        },
+                                        {
+                                            "action": "retry_with_clue",
+                                            "label": "Yes, but please give me a clue."
+                                        },
+                                        {
+                                            "action": "no_retry",
+                                            "label": "No, I want to move on."
+                                        }
+                                    ]
+                                },
+                                "incorrectFinalTry": {
+                                    "speech": "Incorrect. The Ambucycle team showed resilience by recovering from setbacks.",
+                                    "instruction": "Click Next to continue with the story.",
+                                    "detail": [
+                                        "Even without high pay, they stayed strong and kept going because they believed in their mission to save lives, and they knew there was a long-term plan and goal to work towards.."
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "id": "end",
+            "backgroundImage": "images/scenes/01_the_emergency.png",
+            "dialogue": {
+                "speech": "Congratulations, you have finished the Ambucycle Pathway!",
+                "instruction": "Click Exit to close Discover and continue with the Health Quest.",
+                "detail": [
+                    "Ambucycle became a big success story in Rwanda. By providing faster access to emergency healthcare, Dr Helen and Dr Loza are saving so many lives!",
+                    "Imagine what you could do in your community, if you put these same entrepreneurial skills to work?"
+                ]
+            }
+        }
+    ]
+}
