@@ -1,7 +1,10 @@
 {
     "levelId": "discover_prototype_01",
     "levelTitle": "Pathway 1 Ambucycle",
-    "avatarImage": "images/avatars/dr_ros.png",
+    "avatarImage": "images/ui/dr_ros.png",
+    "pointsIcon": "images/ui/icon_points.png",
+    "coinIcon": "images/ui/icon_coin.png",
+    "exitIcon": "images/ui/icon_exit.png",
     "scoreCategories": [
         "opportunity_recognition",
         "innovative_problem_solving",
@@ -12,11 +15,11 @@
     "panels": [
         {
             "id": "intro",
-            "backgroundImage": "images/scenes/intro.png"
+            "backgroundImage": "images/scenes/intro.webp"
         },
         {
             "id": "story_01",
-            "backgroundImage": "images/scenes/story_01.png",
+            "backgroundImage": "images/scenes/story_01.webp",
             "dialogue": {
                 "speech": "In a small village outside Kigali, Rwanda, two doctors are visiting a community.",
                 "instruction": "Click next to continue"
@@ -26,7 +29,7 @@
             "variants": [
                 {
                     "id": "action_01a",
-                    "backgroundImage": "images/scenes/action_01A.png",
+                    "backgroundImage": "images/scenes/action_01A.webp",
                     "dialogue": {
                         "speech": "What problem do you think Dr Helen and Dr Loza noticed?",
                         "instruction": "Select the correct answer and click Submit.",
@@ -102,7 +105,7 @@
                 },
                 {
                     "id": "action_01b",
-                    "backgroundImage": "images/scenes/action_01B.png",
+                    "backgroundImage": "images/scenes/action_01B.webp",
                     "dialogue": {
                         "speech": "What problem with the current system should they try to solve?",
                         "instruction": "Select the correct answer and click Submit.",
@@ -182,7 +185,7 @@
             "variants": [
                 {
                     "id": "action_02a",
-                    "backgroundImage": "images/scenes/action_02A.png",
+                    "backgroundImage": "images/scenes/action_02A.webp",
                     "dialogue": {
                         "speech": "How could Dr Helen and Dr Loza show initiative?",
                         "instruction": "Select the correct answer and click Submit.",
@@ -258,7 +261,7 @@
                 },
                 {
                     "id": "action_02b",
-                    "backgroundImage": "images/scenes/action_02B.png",
+                    "backgroundImage": "images/scenes/action_02B.webp",
                     "dialogue": {
                         "speech": "What step should they take next?",
                         "instruction": "Select the correct answer and click Submit.",
@@ -337,7 +340,7 @@
             "variants": [
                 {
                     "id": "action_03a",
-                    "backgroundImage": "images/scenes/action_03A.png",
+                    "backgroundImage": "images/scenes/action_03A.webp",
                     "dialogue": {
                         "speech": "What creative vehicle choice will solve their problem?",
                         "instruction": "Select the correct answer and click Submit.",
@@ -412,7 +415,7 @@
                 },
                 {
                     "id": "action_03b",
-                    "backgroundImage": "images/scenes/action_03B.png",
+                    "backgroundImage": "images/scenes/action_03B.webp",
                     "dialogue": {
                         "speech": "What technology should they build to solve this problem?",
                         "instruction": "Select the correct answer and click Submit.",
@@ -488,7 +491,7 @@
         },
         {
             "id": "story_02",
-            "backgroundImage": "images/scenes/story_02.png",
+            "backgroundImage": "images/scenes/story_02.webp",
             "dialogue": {
                 "speech": "Together, the doctors decided to start Ambucycle, a service that sends trained health workers on motorcycles to reach people faster.",
                 "detail": [
@@ -502,7 +505,7 @@
             "variants": [
                 {
                     "id": "action_04a",
-                    "backgroundImage": "images/scenes/action_04A.png",
+                    "backgroundImage": "images/scenes/action_04A.webp",
                     "dialogue": {
                         "speech": "Why should they collaborate with the police?",
                         "instruction": "Select the correct answer and click Submit.",
@@ -577,7 +580,7 @@
                 },
                 {
                     "id": "action_04b",
-                    "backgroundImage": "images/scenes/action_04B.png",
+                    "backgroundImage": "images/scenes/action_04B.webp",
                     "dialogue": {
                         "speech": "Why should they collaborate with emergency healthcare workers?",
                         "instruction": "Select the correct answer and click Submit.",
@@ -654,7 +657,7 @@
         },
         {
             "id": "story_03",
-            "backgroundImage": "images/scenes/story_03.png",
+            "backgroundImage": "images/scenes/story_03.webp",
             "dialogue": {
                 "speech": "Dr Helen and Dr Loza did not have lots of money or equipment.",
                 "detail": [
@@ -667,7 +670,7 @@
         },
         {
             "id": "story_04",
-            "backgroundImage": "images/scenes/story_04.png",
+            "backgroundImage": "images/scenes/story_04.webp",
             "dialogue": {
                 "speech": "Getting support from the Ministry of Health made it easier for Dr Helen and Dr Loza to test their ideas and help more people.",
                 "detail": [
@@ -681,7 +684,7 @@
             "variants": [
                 {
                     "id": "action_05a",
-                    "backgroundImage": "images/scenes/action_05A.png",
+                    "backgroundImage": "images/scenes/action_05A.webp",
                     "dialogue": {
                         "speech": "Ambucycle grew fast. Many people needed their help. But it was not always easy. How could Dr Helen and Dr Loza show resilience?",
                         "instruction": "Select the ALL the correct answers and click Submit.",
@@ -758,14 +761,14 @@
                 },
                 {
                     "id": "action_05b",
-                    "backgroundImage": "images/scenes/action_05B.png",
+                    "backgroundImage": "images/scenes/action_05B.webp",
                     "dialogue": {
                         "speech": "Ambucycle grew fast. Many people needed their help. But it was not always easy. How can Dr Loza adapt to this situation and get her team to stay?",
                         "instruction": "Select the ALL the correct answers and click Submit.",
                         "question": {
                             "category": "resilience",
                             "options": [
-                                "Share their long-term goals and plans to get there.",
+                                "Share their long-term goals and plans for success.",
                                 "Remind them they are saving lives in their community.",
                                 "Keep the money problems a secret and hope they do not notice.",
                                 "Tell the workers they will be fired if they do not accept a pay cut."
@@ -837,7 +840,7 @@
         },
         {
             "id": "end",
-            "backgroundImage": "images/scenes/story_05.png",
+            "backgroundImage": "images/scenes/story_05.webp",
             "dialogue": {
                 "speech": "Congratulations, you have finished the Ambucycle Pathway!",
                 "instruction": "Click Exit to close Discover and continue with the Health Quest.",
