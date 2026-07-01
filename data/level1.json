@@ -826,7 +826,7 @@
                                     "speech": "Incorrect. The Ambucycle team showed resilience by recovering from setbacks.",
                                     "instruction": "Click Next to continue with the story.",
                                     "detail": [
-                                        "Even without high pay, they stayed strong and kept going because they believed in their mission to save lives, and they knew there was a long-term plan and goal to work towards.."
+                                        "Even without high pay, they stayed strong and kept going because they believed in their mission to save lives, and they knew there was a long-term plan and goal to work towards."
                                     ]
                                 }
                             }
@@ -837,7 +837,7 @@
         },
         {
             "id": "end",
-            "backgroundImage": "images/scenes/01_the_emergency.png",
+            "backgroundImage": "images/scenes/story_05.png",
             "dialogue": {
                 "speech": "Congratulations, you have finished the Ambucycle Pathway!",
                 "instruction": "Click Exit to close Discover and continue with the Health Quest.",
