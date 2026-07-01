@@ -124,6 +124,8 @@ Config.saves.autoload = false;
 // ==========================================================================
 setup.loadLevelData = async function(fileName) {
     try {
+        // NEW: Remember the active filename across browser refreshes
+        State.variables.currentLevelFile = fileName;
         const response = await fetch("data/" + fileName);
         if (!response.ok) throw new Error("HTTP error! status: " + response.status);
         
@@ -373,10 +375,10 @@ setup.triggerExitPrompt = function() {
 
 /* Setup a placeholder for our loaded level data data structure */
 &lt;&lt;set $levelLoaded to false&gt;&gt;</tw-passagedata><tw-passagedata pid="2" name="GameLoop" tags="" position="1025,375" size="100,100">&lt;&lt;nobr&gt;&gt;
-&lt;&lt;if !$levelLoaded&gt;&gt;
+&lt;&lt;if !$levelLoaded or !setup.currentLevel&gt;&gt;
     &lt;div class=&quot;loading-error&quot;&gt;
-        &lt;p&gt;No level file active. Please load a valid operational level configuration.&lt;/p&gt;
-        &lt;&lt;button &quot;Launch Simulation Operation&quot;&gt;&gt;&lt;&lt;run setup.loadLevelData(&quot;level1.json&quot;)&gt;&gt;&lt;&lt;/button&gt;&gt;
+        &lt;p&gt;Re-synchronizing operational level configurations...&lt;/p&gt;
+        &lt;&lt;run setup.loadLevelData($currentLevelFile || &quot;level1.json&quot;)&gt;&gt;
     &lt;/div&gt;
 &lt;&lt;else&gt;&gt;
     &lt;&lt;run setup.initPanelState()&gt;&gt;
