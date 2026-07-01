@@ -414,3 +414,74 @@ body {
         opacity: 1;
     }
 }
+
+
+
+/* ==========================================================================
+   11. UNIFIED MENU ICON SIZING & ALIGNMENT
+   ========================================================================== */
+/* Strip default browser backgrounds/borders off the custom exit button frame */
+.hud-exit-trigger-btn {
+    background: transparent !important;
+    border: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    box-shadow: none !important;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+}
+
+/* MASTER GROUP SELECTOR: Controls points, coins, and exit image sizes in one place */
+.hud-menu-icon {
+    height: 22px !important;
+    /* Change this pixel number to size all menu icons together! */
+    width: auto !important;
+    /* Preserves source image aspect ratios safely */
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+    /* Clean spacing layout cushion */
+    position: relative;
+    top: -1px;
+    /* Precision alignment tracking nudge */
+    transition: transform 0.15s ease, filter 0.15s ease;
+}
+
+/* Add a clean hover pop effect strictly to the exit button icon */
+.hud-exit-trigger-btn:hover .hud-menu-icon {
+    transform: scale(1.1);
+    filter: brightness(1.2);
+}
+
+
+/* ==========================================================================
+   12. GLOBAL DIALOG BOX HEADER STYLE ADJUSTMENTS
+   ========================================================================== */
+/* CATCH: SugarCube places your custom class name onto the dialog's body element. 
+   The title sits outside of it, so we target the global title element directly: */
+#ui-dialog-title {
+    text-transform: none !important;
+    /* Disables SugarCube's forced ALL-CAPS rule */
+    color: #ffffff !important;
+    /* Sets your preferred title text color */
+}
+
+/* ==========================================================================
+   13. EXIT MODAL CONTENT & BUTTON CENTERING
+   ========================================================================== */
+/* Targets your specific alert warning text color inside the dialog box */
+.exit-modal .exit-dialog-body p {
+    color: #ffffff !important;
+    /* Soft alert red color line */
+}
+
+/* Centers your custom action button elements horizontally */
+.exit-modal .exit-modal-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    /* Balances a clean gap distance between the buttons */
+    margin-top: 16px;
+    /* Adds a breathing cushion below your paragraph text */
+}
